@@ -1,7 +1,7 @@
 import "../../CSS/Navbar.css"
 import Side from "../assets/Vector/menu.png"
 
-export default function Navbar(flag,setFlag) {
+export default function Navbar({flag,setFlag}) {
   return (
     <div className="flex justify-around pt-6 items-center nav">
         <img onClick={() => setFlag(!flag)} className="w-8 h-8 side-bar z-[3]"src={Side} />
